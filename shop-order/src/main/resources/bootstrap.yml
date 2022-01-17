@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-order
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848 #nacos服务端地址
+        file-extension: yml #配置格式
+        namespace: public
+        group: SEATA_GROUP
+    alibaba:
+      seata:
+        tx-service-group: ${spring.application.name}
+  profiles:
+    active: dev #配置环境

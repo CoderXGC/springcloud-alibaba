@@ -1,0 +1,14 @@
+
+H
+java:S1135"2Complete the task associated to this TODO comment.(›ΛΣ
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ƒ‰΅³ϋÿÿÿÿ8ÿή™ιδ/
+X	java:S125"<This block of commented-out lines of code should be removed.(Σ”Έ²8ϋφ™ιδ/
+]	java:S125"<This block of commented-out lines of code should be removed.(‡›Υβϋÿÿÿÿ8έΚ™ιδ/
+u
+java:S1128
+"XRemove this unused import 'org.springframework.boot.web.servlet.FilterRegistrationBean'.(Χ±Ρ΅8¬½ιδ/
+e
+java:S1128"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚ξ‰ή8¬½ιδ/
+s
+java:S1128"QRemove this unused import 'org.springframework.context.annotation.Configuration'.(¬²Ϊδώÿÿÿÿ8¬½ιδ/
