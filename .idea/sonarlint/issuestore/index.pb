@@ -5,8 +5,6 @@ h
 8shop-product/src/main/java/com/ylesb/dao/ProductDao.java,c\3\c32bcbe79fab5fe711f0ac6bc0ec73560e938cb9
 y
 Ishop-product/src/main/java/com/ylesb/service/Impl/ProductServiceImpl.java,f\1\f1ceb92f280498c317e09d71d67f185aadb300db
-d
-4shop-commom/src/main/java/com/ylesb/domain/User.java,b\d\bd5dca7770f938d1891a0c35f2b240276bfc83f0
 p
 @shop-user/src/main/java/com/ylesb/controller/UserController.java,0\9\0928ba6e2cffe4166f5c3ab64de7bc445f4e208e
 b
@@ -37,14 +35,10 @@ n
 >api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
 n
 >shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 h
 8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
 l
 <shop-order/src/main/java/com/ylesb/service/OrderService.java,4\a\4a0be6d6a038d77b6e8a916317c41da6ed59ab10
-g
-7shop-commom/src/main/java/com/ylesb/domain/Product.java,8\9\89c5fc7175670a4f44577174d35234b1a64c2768
 |
 Lapi-gateway/src/main/java/com/ylesb/predicates/AgeRoutePredicateFactory.java,c\d\cd288a5dada90e55748e2d06ee84ec99d261e58e
 p
@@ -53,14 +47,10 @@ t
 Dapi-gateway/src/main/java/com/ylesb/config/GatewayConfiguration.java,7\d\7de90c31e5e90655897ede778c7d5d9ea59b74f8
 x
 Hapi-gateway/src/main/java/com/ylesb/filters/LogGatewayFilterFactory.java,7\0\7059f0b779ea1a33af38bd0b3f8d12a65aba80ca
-e
-5shop-commom/src/main/java/com/ylesb/domain/Order.java,9\9\99a509f41223f089f13c1a9ab4c9f1cde37b4943
 w
 Gshop-order/src/test/java/com/ylesb/test/RocketMQReceiveMessageTest.java,e\6\e60cb1edca3c414ebffc07aaa956a0c26f3832b0
 t
 Dshop-order/src/test/java/com/ylesb/test/RocketMQSendMessageTest.java,7\2\72319cf6c40cb6df2959833e20123eeffe34d1b2
-e
-5shop-commom/src/main/java/com/ylesb/domain/TxLog.java,2\3\236ef979e7572213fd643c3812f2a62c8e50b24a
 f
 6shop-user/src/main/java/com/ylesb/UserApplication.java,2\7\2711291225762af7a6173841dfb254d5f722b4d3
 l
@@ -69,8 +59,6 @@ d
 4shop-order/src/main/java/com/ylesb/dao/TxLogDao.java,2\4\24f7252c088074c20f91b45090cad09e0d694c73
 ~
 Nshop-order/src/main/java/com/ylesb/service/Impl/OrderServiceImpl4Listener.java,3\6\36aefbee7c006082cf5d703a560ce3c555feeb34
-C
-shop-commom/pom.xml,d\1\d14625c1f6c51b46e9c19db7c3831c15dcefbd93
 C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
 r

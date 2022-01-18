@@ -8,15 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shop-commom" />
         <module name="api-gateway" />
-        <module name="shop-user" />
-        <module name="shop-product" />
-        <module name="shop-order" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-getway" target="1.8" />
+      <module name="shop-order" target="1.8" />
+      <module name="shop-product" target="1.8" />
+      <module name="shop-user" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="api-getway" options="-parameters" />
       <module name="shop-commom" options="-parameters" />
       <module name="shop-order" options="-parameters" />
       <module name="shop-product" options="-parameters" />

@@ -10,10 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>shop-commom</module>
-        <module>shop-user</module>
-        <module>shop-product</module>
-        <module>shop-order</module>
-        <module>api-gateway</module>
     </modules>
 
     <!--父工程-->
@@ -49,16 +45,4 @@
 
         </dependencies>
     </dependencyManagement>
-    <dependencies>
-        <!--链路追踪（现在用sky walking的多）-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
-        </dependency>
-        <!--zipkinui链路展示-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
-    </dependencies>
 </project>
