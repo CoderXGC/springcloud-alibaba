@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>shop-commom</module>
+        <module>shop-user</module>
     </modules>
 
     <!--父工程-->

@@ -63,8 +63,6 @@ C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
 r
 Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
-A
-shop-user/pom.xml,7\8\78e91af9c071acbc05ebc1fc3ad9e6cc530bbca9
 z
 Jshop-product/src/main/java/com/ylesb/controller/NacosConfigController.java,6\c\6c5d76c25c491ea695cb2902c9cb700662375f92
 D
