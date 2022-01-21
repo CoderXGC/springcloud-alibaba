@@ -8,14 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shop-commom" />
         <module name="api-gateway" />
-        <module name="shop-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-getway" target="1.8" />
       <module name="shop-order" target="1.8" />
       <module name="shop-product" target="1.8" />
-      <module name="shop-user" target="8" />
+      <module name="shop-user" target="1.8" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
   </component>
