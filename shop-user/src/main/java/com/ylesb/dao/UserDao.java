@@ -10,6 +10,7 @@ package com.ylesb.dao;
 
 import com.ylesb.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * @className    : UserDao
@@ -22,6 +23,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @updateTime   : [2022/1/22 8:54]
  * @updateRemark : [描述说明本次修改内容] 
  */
-
+@Repository
 public interface UserDao extends JpaRepository<User, Integer> {
 }

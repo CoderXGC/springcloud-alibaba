@@ -8,6 +8,8 @@ package com.ylesb.service;
  * @date 2022/1/229:08
  */
 
+import com.ylesb.domain.Product;
+
 /**
  * @className    : ProductService
  * @description  : [描述说明该类的功能]  
@@ -21,4 +23,6 @@ package com.ylesb.service;
  */
 
 public interface ProductService {
+    //根据pid查商品信息
+     Product findByPid(Integer pid);
 }

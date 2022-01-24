@@ -10,6 +10,7 @@ package com.ylesb.dao;
 
 import com.ylesb.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * @className    : ProductDao
@@ -22,6 +23,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @updateTime   : [2022/1/22 9:08]
  * @updateRemark : [描述说明本次修改内容] 
  */
-
+@Repository
 public interface ProductDao extends JpaRepository<Product,Integer>  {
 }

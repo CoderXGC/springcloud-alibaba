@@ -8,7 +8,10 @@ package com.ylesb.service.impl;
  * @date 2022/1/229:09
  */
 
+import com.ylesb.dao.ProductDao;
+import com.ylesb.domain.Product;
 import com.ylesb.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -24,4 +27,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ProductServiceImpl implements ProductService {
+    @Autowired
+    private ProductDao productDao;
+    @Override
+    public Product findByPid(Integer pid) {
+        //jpa提供的具体查询功能不需要自行编辑
+        return productDao.findById(pid).get();
+    }
 }
