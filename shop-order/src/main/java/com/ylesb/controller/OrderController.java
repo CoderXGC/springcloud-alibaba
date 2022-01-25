@@ -40,6 +40,7 @@ public class OrderController {
     //用户下单接口
     @RequestMapping("/order/prod/{pid}")
     public Order order(@PathVariable("pid") Integer pid){
+        //日志打印
         log.info("接收{}号商品下单",pid);
         //进行商品查询
         Product product =restTemplate.getForObject("http://localhost:8081/product/"+pid,Product.class);
