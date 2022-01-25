@@ -33,6 +33,6 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer pid;
     private String pname;
-    private String pprice;
+    private Double pprice;
     private Integer stock;
 }

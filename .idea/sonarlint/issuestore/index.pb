@@ -1,6 +1,4 @@
 
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 j
 :shop-user/src/main/java/com/ylesb/service/UserService.java,f\d\fde9cddf8e62379d57406632ecad2295da6ad48c
 s
@@ -11,8 +9,6 @@ f
 6shop-user/src/main/java/com/ylesb/UserApplication.java,2\7\2711291225762af7a6173841dfb254d5f722b4d3
 d
 4shop-commom/src/main/java/com/ylesb/domain/User.java,b\d\bd5dca7770f938d1891a0c35f2b240276bfc83f0
-D
-shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
 b
 2shop-user/src/main/java/com/ylesb/dao/UserDao.java,4\4\44f102bba6fc721245bab5489c88911a94f0d9f8
 p
