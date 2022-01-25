@@ -34,6 +34,7 @@ public class Order {
     private Long oid;
     private Integer uid;
     private Integer pid;
+    private String uname;
     private String pname;
     private Double pprice;
     private Integer number;
