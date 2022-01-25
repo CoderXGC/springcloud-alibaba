@@ -37,6 +37,7 @@ public class OrderController {
     private RestTemplate restTemplate;
     @Autowired
     private OrderService orderService;
+    //用户下单接口
     @RequestMapping("/order/prod/{pid}")
     public Order order(@PathVariable("pid") Integer pid){
         log.info("接收{}号商品下单",pid);
