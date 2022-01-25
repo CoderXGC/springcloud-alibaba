@@ -37,8 +37,6 @@ n
 >api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
 n
 >shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 h
 8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
 l
