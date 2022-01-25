@@ -5,3 +5,15 @@ j
 :shop-user/src/main/java/com/ylesb/service/UserService.java,f\d\fde9cddf8e62379d57406632ecad2295da6ad48c
 s
 Cshop-user/src/main/java/com/ylesb/service/impl/UserServiceImpl.java,e\3\e31266db3d9b375e649ef7c1a214b60536c7ce82
+A
+shop-user/pom.xml,7\8\78e91af9c071acbc05ebc1fc3ad9e6cc530bbca9
+f
+6shop-user/src/main/java/com/ylesb/UserApplication.java,2\7\2711291225762af7a6173841dfb254d5f722b4d3
+d
+4shop-commom/src/main/java/com/ylesb/domain/User.java,b\d\bd5dca7770f938d1891a0c35f2b240276bfc83f0
+D
+shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
+b
+2shop-user/src/main/java/com/ylesb/dao/UserDao.java,4\4\44f102bba6fc721245bab5489c88911a94f0d9f8
+p
+@shop-user/src/main/java/com/ylesb/controller/UserController.java,0\9\0928ba6e2cffe4166f5c3ab64de7bc445f4e208e
