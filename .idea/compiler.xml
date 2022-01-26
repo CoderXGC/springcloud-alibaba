@@ -11,12 +11,14 @@
         <module name="shop-user" />
         <module name="shop-product" />
         <module name="shop-order" />
+        <module name="api-getway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="api-getway" options="-parameters" />
       <module name="shop-commom" options="-parameters" />
       <module name="shop-order" options="-parameters" />
       <module name="shop-product" options="-parameters" />
