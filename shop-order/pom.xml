@@ -23,6 +23,11 @@
             <artifactId>shop-commom</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--nacos客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

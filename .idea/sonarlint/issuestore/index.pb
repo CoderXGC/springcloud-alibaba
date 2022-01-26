@@ -13,11 +13,7 @@ y
 Ishop-product/src/main/java/com/ylesb/service/impl/ProductServiceImpl.java,e\4\e495d167eecefaf0dea74d910635af84daac615b
 h
 8shop-product/src/main/java/com/ylesb/dao/ProductDao.java,c\3\c32bcbe79fab5fe711f0ac6bc0ec73560e938cb9
-l
-<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
 p
 @shop-product/src/main/java/com/ylesb/service/ProductService.java,3\0\3005242601e77842ac4e69cbb0073bdefe6d2c41
 p
 @shop-user/src/main/java/com/ylesb/controller/UserController.java,0\9\0928ba6e2cffe4166f5c3ab64de7bc445f4e208e
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

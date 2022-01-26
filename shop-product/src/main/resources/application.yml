@@ -15,3 +15,7 @@ spring:
           auto: update
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
