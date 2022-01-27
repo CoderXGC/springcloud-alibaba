@@ -14,10 +14,15 @@ import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * @className    : OrderController
@@ -37,12 +42,20 @@ public class OrderController {
     private RestTemplate restTemplate;
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private DiscoveryClient discoveryClient;
     //用户下单接口
     @RequestMapping("/order/prod/{pid}")
     public Order order(@PathVariable("pid") Integer pid){
         log.info("接收{}号商品下单",pid);
         //进行商品查询
-        Product product =restTemplate.getForObject("http://localhost:8081/product/"+pid,Product.class);
+        //List<ServiceInstance> serviceInstanceList=discoveryClient.getInstances("service-product");
+        ////随机负载均衡
+        //int index= new Random().nextInt(serviceInstanceList.size());
+        //ServiceInstance instance=serviceInstanceList.get(0);
+       // Product product =restTemplate.getForObject("http://"+instance.getHost()+":"+instance.getPort()+"/product/"+pid,Product.class);
+        //service-product实在nacos中的服务名称也就是项目名称
+        Product product =restTemplate.getForObject("http://service-product/product/"+pid,Product.class);
         log.info("查询到{}商品的信息是{}",pid, JSON.toJSONString(product));
         //创建订单
         Order order=new Order();

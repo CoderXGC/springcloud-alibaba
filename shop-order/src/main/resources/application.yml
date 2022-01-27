@@ -19,3 +19,6 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+service-product: #服务提供者的名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
