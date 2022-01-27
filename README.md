@@ -12,6 +12,6 @@
   等待添加...
   
 ## Stars 趋势
-[![Stargazers over time](https://starchart.cc/CoderXGC/springcloud-alibaba.svg)](https://starchart.cc/CoderXGC/springcloud-alibaba)
+[![Stargazers over time](https://starchart.cc/CoderXGC/springcloud-alibaba.svg)](https://github.com/CoderXGC/springcloud-alibaba/stargazers)
 ## 交流
 ![Image text](https://i.loli.net/2021/11/29/Rm1SX7JWPBEDsat.png)
