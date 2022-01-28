@@ -12,6 +12,7 @@ import com.alibaba.fastjson.JSON;
 import com.ylesb.domain.Order;
 import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
+import com.ylesb.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -44,19 +45,14 @@ public class OrderController {
     private OrderService orderService;
     @Autowired
     private DiscoveryClient discoveryClient;
+    @Autowired
+    private ProductService productService;
     //用户下单接口
     @RequestMapping("/order/prod/{pid}")
     public Order order(@PathVariable("pid") Integer pid){
         log.info("接收{}号商品下单",pid);
-        //进行商品查询
-        //List<ServiceInstance> serviceInstanceList=discoveryClient.getInstances("service-product");
-        ////随机负载均衡
-        //int index= new Random().nextInt(serviceInstanceList.size());
-        //ServiceInstance instance=serviceInstanceList.get(0);
-       // Product product =restTemplate.getForObject("http://"+instance.getHost()+":"+instance.getPort()+"/product/"+pid,Product.class);
-        //service-product实在nacos中的服务名称也就是项目名称
-        Product product =restTemplate.getForObject("http://service-product/product/"+pid,Product.class);
-        log.info("查询到{}商品的信息是{}",pid, JSON.toJSONString(product));
+        //获取商品信息
+        Product product=productService.findByPid(pid);
         //创建订单
         Order order=new Order();
         order.setUid(1);
