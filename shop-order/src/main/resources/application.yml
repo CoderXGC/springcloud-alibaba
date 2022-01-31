@@ -1,5 +1,7 @@
 server:
   port: 8091
+  tomcat:
+    max-threads: 10
 spring:
   application:
     name: service-order

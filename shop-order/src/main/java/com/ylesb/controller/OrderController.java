@@ -39,19 +39,22 @@ import java.util.Random;
 @RestController
 @Slf4j
 public class OrderController {
-    @Autowired
-    private RestTemplate restTemplate;
+
     @Autowired
     private OrderService orderService;
-    @Autowired
-    private DiscoveryClient discoveryClient;
     @Autowired
     private ProductService productService;
     //用户下单接口
     @RequestMapping("/order/prod/{pid}")
-    public Order order(@PathVariable("pid") Integer pid){
+    public Order order(@PathVariable("pid") Integer pid)  {
         log.info("接收{}号商品下单",pid);
         //获取商品信息
+        //模拟调用时间
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Product product=productService.findByPid(pid);
         //创建订单
         Order order=new Order();
@@ -61,8 +64,13 @@ public class OrderController {
         order.setPname(product.getPname());
         order.setPprice(product.getPprice());
         order.setNumber(1);
-        orderService.createOrder(order);
+      //  orderService.createOrder(order);
         log.info("下单{}号成功！",pid);
         return order;
+    }
+    //测试高并发
+    @RequestMapping("/order/message")
+    private String message(){
+        return "sucess";
     }
 }
