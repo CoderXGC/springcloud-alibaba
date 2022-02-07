@@ -67,4 +67,9 @@ public class OrderController {
     private String message(){
         return "sucess";
     }
+    //测试高并发
+    @RequestMapping("/order/message1")
+    private String message1(){
+        return "sucess1";
+    }
 }

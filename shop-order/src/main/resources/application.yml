@@ -1,7 +1,7 @@
 server:
   port: 8091
   tomcat:
-    max-threads: 10
+    max-threads: 10  #设置高并发的最大线程数
 spring:
   application:
     name: service-order
@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&userSSL=true
     username: root
     password: 123456
-  jpa:
+  jpa:   #JPA配置
     properties:
       hibernate:
         hbm2ddl:
@@ -18,9 +18,13 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
   cloud:
-    nacos:
+    nacos:   #nacos配置
       discovery:
         server-addr: localhost:8848
+    sentinel:   #sentinel配置
+      eager: true
+      transport:
+        dashboard: localhost:8080 #指定控制台的服务地址
 service-product: #服务提供者的名称
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
