@@ -81,3 +81,5 @@ D
 shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
 i
 9shop-user/src/main/java/com/ylesb/service/SmsService.java,7\6\76552bdff6427451d79de118d894e3b79f082b94
+B
+shop-order/pom.xml,5\e\5e035d215ead115ecddad2115ded0042cb798359
