@@ -8,6 +8,7 @@ package com.ylesb.service.impl;
  * @date 2022/1/2510:40
  */
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.ylesb.dao.OrderDao;
 import com.ylesb.domain.Order;
 import com.ylesb.service.OrderService;
@@ -32,5 +33,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void createOrder(Order order) {
         orderDao.save(order);
+    }
+    @Override
+    @SentinelResource("messsage")
+    public String message() {
+        return "message";
     }
 }

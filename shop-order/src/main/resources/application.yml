@@ -25,6 +25,9 @@ spring:
       eager: true
       transport:
         dashboard: localhost:8080 #指定控制台的服务地址
+      #web-context-unify: false #默认将调用链路收敛 低版本可能不生效
+      filter:
+        enabled: false  #关闭sentinel官方的CommonFilter实例化
 service-product: #服务提供者的名称
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

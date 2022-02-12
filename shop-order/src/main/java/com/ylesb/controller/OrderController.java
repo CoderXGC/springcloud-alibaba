@@ -8,6 +8,7 @@ package com.ylesb.controller;
  * @date 2022/1/2510:39
  */
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.ylesb.domain.Order;
 import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
@@ -65,11 +66,17 @@ public class OrderController {
     //测试高并发
     @RequestMapping("/order/message")
     private String message(){
-        return "sucess";
+        return   orderService.message();
     }
     //测试高并发
     @RequestMapping("/order/message1")
     private String message1(){
-        return "sucess1";
+        return   orderService.message();
     }
+    @RequestMapping("/order/message2")
+    @SentinelResource("message2")
+    private String message2(String name ,Integer age){
+        return  "姓名："+name+"年龄："+age;
+    }
+
 }

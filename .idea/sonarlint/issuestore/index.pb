@@ -17,5 +17,5 @@ p
 @shop-product/src/main/java/com/ylesb/service/ProductService.java,3\0\3005242601e77842ac4e69cbb0073bdefe6d2c41
 p
 @shop-user/src/main/java/com/ylesb/controller/UserController.java,0\9\0928ba6e2cffe4166f5c3ab64de7bc445f4e208e
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+D
+shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
