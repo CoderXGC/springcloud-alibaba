@@ -1,0 +1,33 @@
+server:
+  port: 8091
+  tomcat:
+    max-threads: 10  #设置高并发的最大线程数
+spring:
+  application:
+    name: service-order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #版本看自己数据库版本安装
+    url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&userSSL=true
+    username: root
+    password: 123456
+  jpa:   #JPA配置
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  cloud:
+    nacos:   #nacos配置
+      discovery:
+        server-addr: localhost:8848
+    sentinel:   #sentinel配置
+      eager: true
+      transport:
+        dashboard: localhost:8080 #指定控制台的服务地址
+      #web-context-unify: false #默认将调用链路收敛 低版本可能不生效
+      filter:
+        enabled: false  #关闭sentinel官方的CommonFilter实例化
+service-product: #服务提供者的名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
