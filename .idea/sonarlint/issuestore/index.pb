@@ -19,3 +19,5 @@ p
 @shop-user/src/main/java/com/ylesb/controller/UserController.java,0\9\0928ba6e2cffe4166f5c3ab64de7bc445f4e208e
 D
 shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
+l
+<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78

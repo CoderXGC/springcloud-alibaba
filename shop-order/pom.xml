@@ -38,9 +38,10 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+        <!--参数热点规则需要引入次依赖-->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-web-servlet</artifactId>
+            <artifactId>sentinel-parameter-flow-control</artifactId>
         </dependency>
     </dependencies>
 
