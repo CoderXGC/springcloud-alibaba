@@ -66,13 +66,12 @@ public class OrderController {
     }
     //测试高并发
     @RequestMapping("/order/message")
-    private String message(){
-
+    public String message(){
        return  orderService.message();
     }
     //测试高并发
     @RequestMapping("/order/message1")
-    private String message1(){
+    public String message1(){
 
        return  orderService.message()+"1";
     }
@@ -81,6 +80,11 @@ public class OrderController {
     @SentinelResource(value ="getNameAndAge")
     private String message2(String name ,Integer age){
         return  "姓名："+name+"年龄："+age;
+    }
+
+    @RequestMapping("/order/message3")
+    public String message3(){
+        return  orderService.message1("xgc");
     }
 
 }

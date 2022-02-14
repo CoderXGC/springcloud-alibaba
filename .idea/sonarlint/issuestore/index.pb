@@ -21,3 +21,5 @@ D
 shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
 l
 <shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

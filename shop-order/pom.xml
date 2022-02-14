@@ -43,6 +43,11 @@
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-parameter-flow-control</artifactId>
         </dependency>
+        <!--添加sentinel持久化到本地的依赖-->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-extension</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

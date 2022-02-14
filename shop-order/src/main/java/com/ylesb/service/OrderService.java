@@ -24,5 +24,6 @@ import com.ylesb.domain.Order;
 public interface OrderService {
     void createOrder(Order order);
     String message();
+    String message1(String name);
 }
 

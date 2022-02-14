@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
  * @updateTime   : [2022/2/14 17:16]
  * @updateRemark : [描述说明本次修改内容] 
  */
-@Component
+//@Component
 public class RequestOriginParserDefinition implements RequestOriginParser {
     //定义请求区分来源
     @Override
