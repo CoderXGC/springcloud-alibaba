@@ -49,7 +49,8 @@ public class OrderServiceImpl implements OrderService {
           //  blockHandlerClass = 自定义类中的方法
             blockHandler="blockHandler",
           //  fallbackClass =
-            fallback = "fallback")
+            fallback = "fallback"
+    )
     public String message1(String name) {
         return "message";
     }

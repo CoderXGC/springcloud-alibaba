@@ -14,6 +14,7 @@ import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
 import com.ylesb.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,6 +53,12 @@ public class OrderController {
             e.printStackTrace();
         }
         Product product=productService.findByPid(pid);
+        if (product.getPid()==-1){
+            Order order = new Order();
+            order.setPid(-1);
+            order.setPname("下单失败");
+            return order;
+        }
         //创建订单
         Order order=new Order();
         order.setUid(1);

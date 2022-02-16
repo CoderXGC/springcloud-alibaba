@@ -9,6 +9,8 @@ package com.ylesb.service;
  */
 
 import com.ylesb.domain.Product;
+import com.ylesb.service.fallback.ProductServiceFallback;
+import com.ylesb.service.fallback.ProductServiceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +27,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @updateRemark : [描述说明本次修改内容] 
  */
 //value用于指定微服务名称即url
-@FeignClient(value="service-product")
+@FeignClient(
+        value="service-product",
+       //fallback= ProductServiceFallback.class,
+       fallbackFactory= ProductServiceFallbackFactory.class
+)
 public interface ProductService {
     //指定请求的路径
     @RequestMapping("/product/{pid}")
