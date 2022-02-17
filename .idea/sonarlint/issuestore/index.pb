@@ -29,3 +29,13 @@ B
 shop-order/pom.xml,5\e\5e035d215ead115ecddad2115ded0042cb798359
 n
 >shop-order/src/main/java/com/ylesb/config/SentinelPerFile.java,b\4\b4cc193d466ce22194f126a9e4779768cf29c0b6
+h
+8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
+r
+Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
+†
+Vshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallbackFactory.java,e\b\eb97a1dfef77a812f0cabe4e1894299acf69074c
+
+Oshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallback.java,b\7\b7b1486670ebe9b83a0134a783045cf150feeecb
+n
+>shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
