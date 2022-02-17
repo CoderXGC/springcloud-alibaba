@@ -1,0 +1,23 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  #注册到nacoos
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #让gateway可以发现nacos中的微服务
+      routes:  #路由数组可以放多个路由。满足什么条件转发到哪个微服务上
+        - id: product_route #当前路由标识，默认uuid
+          #uri: http://localhost:8081 #要转发的地址
+          uri: lb://service-product #lb负载均衡 后面是具体微服务的标识
+          order: 1 #路由越小优先级越高
+          predicates:  #断言（条件判断，返回值是bool，满足条件的）可以自定义路由配置详情看AGEROUTER
+            - Path=/product-serv/**  #当请求的规则满足
+          filters: #过滤器 自定义过滤器Log
+            - StripPrefix=1 #在请求转发路径去掉一层
+           # - Log=ture,false
