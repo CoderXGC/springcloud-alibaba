@@ -11,10 +11,12 @@
         <module name="api-gateway" />
         <module name="shop-user" />
         <module name="shop-product" />
+        <module name="api-getaway" />
         <module name="shop-order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="8" />
       <module name="api-getway" target="1.8" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="api-getaway" options="-parameters" />
       <module name="api-getway" options="-parameters" />
       <module name="shop-commom" options="-parameters" />
       <module name="shop-order" options="-parameters" />

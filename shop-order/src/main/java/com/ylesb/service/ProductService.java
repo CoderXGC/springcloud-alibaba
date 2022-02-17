@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //value用于指定微服务名称即url
 @FeignClient(
         value="service-product",
-       //fallback= ProductServiceFallback.class,
+       fallback= ProductServiceFallback.class,
        fallbackFactory= ProductServiceFallbackFactory.class
 )
 public interface ProductService {
