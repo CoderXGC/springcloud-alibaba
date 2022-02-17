@@ -2,15 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shop-order" />
         <module name="shop-commom" />
         <module name="api-gateway" />
         <module name="shop-user" />
         <module name="shop-product" />
-        <module name="shop-order" />
+        <module name="api-getaway" />
         <module name="api-getway" />
       </profile>
     </annotationProcessing>
@@ -18,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="api-getaway" options="-parameters" />
       <module name="api-getway" options="-parameters" />
       <module name="shop-commom" options="-parameters" />
       <module name="shop-order" options="-parameters" />
