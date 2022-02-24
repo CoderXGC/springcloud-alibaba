@@ -30,12 +30,19 @@ import reactor.core.publisher.Mono;
  */
 
 @Component
-public class AuthGlobaFilter implements GlobalFilter, Ordered {
+public class AuthGlobalFilter implements GlobalFilter, Ordered {
     //统一鉴权
+    /**
+     * 执行过滤器中的业务逻辑
+     *     对请求参数中的access-token进行判断
+     *      如果存在此参数:代表已经认证成功
+     *      如果不存在此参数 : 认证失败.
+     *  ServerWebExchange : 相当于请求和响应的上下文(zuul中的RequestContext)
+     */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String token=exchange.getRequest().getQueryParams().getFirst("token");
-        if(StringUtils.equals("admin",token))
+        if(!StringUtils.equals("admin",token))
         {
             //鉴权失败
             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);

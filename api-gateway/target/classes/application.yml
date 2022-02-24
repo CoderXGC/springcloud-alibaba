@@ -18,8 +18,8 @@ spring:
           order: 1 #路由越小优先级越高
           predicates:  #断言（条件判断，返回值是bool，满足条件的）可以自定义路由配置详情看AGEROUTER
             - Path=/product-serv/**  #当请求的规则满足
-            - Age=18,60  #限制18到60的人
+            #- Age=18,60  #限制18到60的人
           filters: #过滤器 自定义过滤器Log
             - StripPrefix=1 #在请求转发路径去掉一层
-            - SetStatus=250
+          #  - SetStatus=250 #设置状态码
            # - Log=ture,false

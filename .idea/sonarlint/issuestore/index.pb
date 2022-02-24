@@ -41,3 +41,5 @@ n
 >shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
 C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

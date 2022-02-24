@@ -21,5 +21,5 @@ spring:
             #- Age=18,60  #限制18到60的人
           filters: #过滤器 自定义过滤器Log
             - StripPrefix=1 #在请求转发路径去掉一层
-            - SetStatus=250 #设置状态码
+          #  - SetStatus=250 #设置状态码
            # - Log=ture,false
