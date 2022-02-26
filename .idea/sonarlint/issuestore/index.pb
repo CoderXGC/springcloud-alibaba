@@ -39,7 +39,7 @@ Vshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallbackFacto
 Oshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallback.java,b\7\b7b1486670ebe9b83a0134a783045cf150feeecb
 n
 >shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
-C
-api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+v
+Fshop-product/src/main/java/com/ylesb/controller/ProductController.java,9\6\964333860ed7710b90af18a3617c2938c36fd048
