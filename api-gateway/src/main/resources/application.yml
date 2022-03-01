@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: api-gateway
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #让nacos把它当成一个url不要做服务名
+    sender:
+      type: web
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0 # 采样比例为: 0.1(即10%),设置的值介于0.0到1.0之间，1.0则表示全部采集。
   cloud:
     nacos:
       discovery:

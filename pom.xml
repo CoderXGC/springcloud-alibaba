@@ -49,4 +49,16 @@
 
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <!--链路追踪（现在用sky walking的多）-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+        <!--zipkinui链路展示-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+    </dependencies>
 </project>
