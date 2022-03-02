@@ -15,8 +15,6 @@ p
 @shop-product/src/main/java/com/ylesb/service/ProductService.java,3\0\3005242601e77842ac4e69cbb0073bdefe6d2c41
 p
 @shop-user/src/main/java/com/ylesb/controller/UserController.java,0\9\0928ba6e2cffe4166f5c3ab64de7bc445f4e208e
-D
-shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
 s
 Cshop-order/src/main/java/com/ylesb/config/ExceptionHandlerPage.java,c\5\c57a7b84b73a7ab7efe5f6a77bc7e35d0f75e065
 |
@@ -41,13 +39,9 @@ q
 Aapi-gateway/src/main/java/com/ylesb/filters/AuthGlobalFilter.java,d\c\dc062cabc777b78f4ae527db39c5a09d2c74a2e8
 C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
-|
-Lapi-gateway/src/main/java/com/ylesb/predicates/AgeRoutePredicateFactory.java,c\d\cd288a5dada90e55748e2d06ee84ec99d261e58e
 u
 Eshop-order/src/main/java/com/ylesb/service/impl/OrderServiceImpl.java,a\c\ac20e1ce462c40999d85f23a3e3932c3a6e98682
 l
 <shop-order/src/main/java/com/ylesb/service/OrderService.java,4\a\4a0be6d6a038d77b6e8a916317c41da6ed59ab10
 d
 4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
-n
->api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
