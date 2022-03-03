@@ -45,3 +45,7 @@ l
 <shop-order/src/main/java/com/ylesb/service/OrderService.java,4\a\4a0be6d6a038d77b6e8a916317c41da6ed59ab10
 d
 4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
+x
+Hapi-gateway/src/main/java/com/ylesb/filters/LogGatewayFilterFactory.java,7\0\7059f0b779ea1a33af38bd0b3f8d12a65aba80ca
+B
+shop-order/pom.xml,5\e\5e035d215ead115ecddad2115ded0042cb798359
