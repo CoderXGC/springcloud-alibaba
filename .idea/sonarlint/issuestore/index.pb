@@ -23,8 +23,6 @@ r
 Bshop-order/src/main/java/com/ylesb/config/FilterContextConfig.java,1\1\11d4ae3540bd3ee68869159f2e91fa98a53fbca4
 n
 >shop-order/src/main/java/com/ylesb/config/SentinelPerFile.java,b\4\b4cc193d466ce22194f126a9e4779768cf29c0b6
-h
-8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
 r
 Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
 †
@@ -47,5 +45,9 @@ d
 4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
 x
 Hapi-gateway/src/main/java/com/ylesb/filters/LogGatewayFilterFactory.java,7\0\7059f0b779ea1a33af38bd0b3f8d12a65aba80ca
-B
-shop-order/pom.xml,5\e\5e035d215ead115ecddad2115ded0042cb798359
+|
+Lapi-gateway/src/main/java/com/ylesb/predicates/AgeRoutePredicateFactory.java,c\d\cd288a5dada90e55748e2d06ee84ec99d261e58e
+n
+>api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
+t
+Dapi-gateway/src/main/java/com/ylesb/config/GatewayConfiguration.java,7\d\7de90c31e5e90655897ede778c7d5d9ea59b74f8

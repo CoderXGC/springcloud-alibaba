@@ -18,6 +18,7 @@
     <bytecodeTargetLevel>
       <module name="api-gateway" target="8" />
       <module name="api-getway" target="1.8" />
+      <module name="shop-auth" target="1.8" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
   </component>
