@@ -15,6 +15,7 @@ import com.ylesb.service.OrderService;
 import com.ylesb.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,6 +42,10 @@ public class OrderController {
     private OrderService orderService;
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private RocketMQTemplate rocketMQTemplate;
+
     //用户下单接口
     @RequestMapping("/order/prod/{pid}")
     public Order order(@PathVariable("pid") Integer pid)  {
@@ -69,6 +74,10 @@ public class OrderController {
         order.setNumber(1);
       //  orderService.createOrder(order);
         log.info("下单{}号成功！",pid);
+        //向mq发消息
+        //参数一指定topic
+        //参数二指定消息内容
+        rocketMQTemplate.convertAndSend("order-topic",order);
         return order;
     }
     //测试高并发

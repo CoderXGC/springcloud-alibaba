@@ -21,14 +21,10 @@ r
 Bshop-order/src/main/java/com/ylesb/config/FilterContextConfig.java,1\1\11d4ae3540bd3ee68869159f2e91fa98a53fbca4
 n
 >shop-order/src/main/java/com/ylesb/config/SentinelPerFile.java,b\4\b4cc193d466ce22194f126a9e4779768cf29c0b6
-r
-Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
 †
 Vshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallbackFactory.java,e\b\eb97a1dfef77a812f0cabe4e1894299acf69074c
 
 Oshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallback.java,b\7\b7b1486670ebe9b83a0134a783045cf150feeecb
-n
->shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
 v
 Fshop-product/src/main/java/com/ylesb/controller/ProductController.java,9\6\964333860ed7710b90af18a3617c2938c36fd048
 q
@@ -49,9 +45,7 @@ n
 >api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
 t
 Dapi-gateway/src/main/java/com/ylesb/config/GatewayConfiguration.java,7\d\7de90c31e5e90655897ede778c7d5d9ea59b74f8
-l
-<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 h
 8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
+o
+?shop-order/src/test/java/com/ylesb/RocketMQSendMessageTest.java,3\0\308e71db85fcd4f16a7a1da95e1b7488e27d349e

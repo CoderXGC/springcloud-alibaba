@@ -15,3 +15,9 @@ spring:
           auto: update
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
+  cloud:
+    nacos: #nacos配置
+      discovery:
+        server-addr: localhost:8848
+rocketmq:
+  name -server: 122.9.161.37:9876 #RocketMQ的name-server的地址
