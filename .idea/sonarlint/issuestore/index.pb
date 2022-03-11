@@ -29,6 +29,9 @@ n
 >shop-order/src/main/java/com/ylesb/config/SentinelPerFile.java,b\4\b4cc193d466ce22194f126a9e4779768cf29c0b6
 
 Oshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallback.java,b\7\b7b1486670ebe9b83a0134a783045cf150feeecb
-¥
-u
-Eshop-order/src/main/java/com/ylesb/service/Impl/OrderServiceImpl.java,8\5\8513f321fcbbc1565b61394a71ebcc883040a432,e\b\eb97a1dfef77a812f0cabe4e1894299acf69074c
+D
+shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
+h
+8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
+l
+<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
