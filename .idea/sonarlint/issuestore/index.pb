@@ -51,3 +51,9 @@ n
 >api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
 t
 Dapi-gateway/src/main/java/com/ylesb/config/GatewayConfiguration.java,7\d\7de90c31e5e90655897ede778c7d5d9ea59b74f8
+l
+<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+h
+8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
