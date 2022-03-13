@@ -68,4 +68,12 @@ public class MessageTyoeTest {
         //参数二： 消息内容
         rocketMQTemplate.sendOneWay("test-topic-1:tag","这是一条单向消息");
     }
+    //单向顺序消息
+    @Test
+    public void sendOneWayOrderly(){
+        //参数一： topic 添加tag 可以使用topic：tag
+        //参数二： 消息内容
+        //参数三： 发送到哪个队列
+        rocketMQTemplate.sendOneWayOrderly("test-topic-1:tag","这是一条单向消息","xxx");
+    }
 }
