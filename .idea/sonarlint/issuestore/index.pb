@@ -31,12 +31,6 @@ q
 Aapi-gateway/src/main/java/com/ylesb/filters/AuthGlobalFilter.java,d\c\dc062cabc777b78f4ae527db39c5a09d2c74a2e8
 C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
-u
-Eshop-order/src/main/java/com/ylesb/service/impl/OrderServiceImpl.java,a\c\ac20e1ce462c40999d85f23a3e3932c3a6e98682
-l
-<shop-order/src/main/java/com/ylesb/service/OrderService.java,4\a\4a0be6d6a038d77b6e8a916317c41da6ed59ab10
-d
-4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
 x
 Hapi-gateway/src/main/java/com/ylesb/filters/LogGatewayFilterFactory.java,7\0\7059f0b779ea1a33af38bd0b3f8d12a65aba80ca
 |
