@@ -49,3 +49,11 @@ h
 8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
 o
 ?shop-order/src/test/java/com/ylesb/RocketMQSendMessageTest.java,3\0\308e71db85fcd4f16a7a1da95e1b7488e27d349e
+C
+shop-commom/pom.xml,d\1\d14625c1f6c51b46e9c19db7c3831c15dcefbd93
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+A
+shop-user/pom.xml,7\8\78e91af9c071acbc05ebc1fc3ad9e6cc530bbca9
+n
+>shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
