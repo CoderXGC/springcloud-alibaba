@@ -13,6 +13,7 @@ import com.ylesb.domain.Order;
 import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
 import com.ylesb.service.ProductService;
+import com.ylesb.service.impl.OrderServiceImplRocketMQ;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
@@ -40,6 +41,8 @@ public class OrderController {
 
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private OrderServiceImplRocketMQ orderServiceImplRocketMQ;
     @Autowired
     private ProductService productService;
 
@@ -72,12 +75,12 @@ public class OrderController {
         order.setPname(product.getPname());
         order.setPprice(product.getPprice());
         order.setNumber(1);
-      //  orderService.createOrder(order);
+        orderServiceImplRocketMQ.createOrderBefore(order);
         log.info("下单{}号成功！",pid);
         //向mq发消息
         //参数一指定topic
         //参数二指定消息内容
-        rocketMQTemplate.convertAndSend("order-topic",order);
+        //rocketMQTemplate.convertAndSend("order-topic",order);
         return order;
     }
     //测试高并发
