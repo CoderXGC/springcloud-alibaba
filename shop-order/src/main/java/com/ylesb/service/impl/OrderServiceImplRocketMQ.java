@@ -46,10 +46,10 @@ public class OrderServiceImplRocketMQ  {
     private RocketMQTemplate rocketMQTemplate;
     @Autowired
     private TxLogDao txLogDao;
+    //发送半事务消息
     public void createOrderBefore(Order order) {
         String txId= UUID.randomUUID().toString();
         rocketMQTemplate.sendMessageInTransaction("tx_producer_group", "tx_topic", MessageBuilder.withPayload(order).setHeader("txId",txId).build(), order);
-
     }
     @Transactional
     public void createOrder(String txId,Order order) {

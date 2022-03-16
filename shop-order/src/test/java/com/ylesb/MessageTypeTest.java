@@ -30,7 +30,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = OrderApplication.class)
-public class MessageTyoeTest {
+public class MessageTypeTest {
     @Autowired
     private RocketMQTemplate rocketMQTemplate;
     //同步消息
@@ -75,5 +75,33 @@ public class MessageTyoeTest {
         //参数二： 消息内容
         //参数三： 发送到哪个队列
         rocketMQTemplate.sendOneWayOrderly("test-topic-1:tag","这是一条单向消息","xxx");
+    }
+    //同步顺序消息
+    @Test
+    public void testSyncSendOrderly(){
+        //参数一： topic 添加tag 可以使用topic：tag
+        //参数二： 消息内容
+        //参数三： 发送到哪个队列
+        rocketMQTemplate.syncSendOrderly("test-topic-1:tag","这是一条单向消息","xxx");
+    }
+    //异步顺序消息
+    @Test
+    public void testAyncSendOrderly() throws InterruptedException {
+        //参数一： topic 添加tag 可以使用topic：tag
+        //参数二： 消息内容
+        //参数三: 回调结果，处理返回结果
+        rocketMQTemplate.asyncSendOrderly("test-topic-1:tag", 10000, "这是一条异步消息", new SendCallback() {
+                    @Override
+                    public void onSuccess(SendResult sendResult) {
+                        System.out.println(sendResult);
+                    }
+
+                    @Override
+                    public void onException(Throwable throwable) {
+                        System.out.println(throwable);
+                    }
+                });
+        System.out.println("=========================");
+        Thread.sleep(30000000000L);
     }
 }

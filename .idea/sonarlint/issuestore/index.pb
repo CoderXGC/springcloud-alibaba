@@ -39,16 +39,12 @@ n
 >api-gateway/src/main/java/com/ylesb/ApiGatewayApplication.java,c\c\cc278e1a27309addb0393ad241c826b847ba2887
 t
 Dapi-gateway/src/main/java/com/ylesb/config/GatewayConfiguration.java,7\d\7de90c31e5e90655897ede778c7d5d9ea59b74f8
-o
-?shop-order/src/test/java/com/ylesb/RocketMQSendMessageTest.java,3\0\308e71db85fcd4f16a7a1da95e1b7488e27d349e
 C
 shop-commom/pom.xml,d\1\d14625c1f6c51b46e9c19db7c3831c15dcefbd93
 A
 shop-user/pom.xml,7\8\78e91af9c071acbc05ebc1fc3ad9e6cc530bbca9
 n
 >shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
-r
-Bshop-order/src/test/java/com/ylesb/RocketMQReceiveMessageTest.java,e\7\e75dbe80e4ee6f34614f51a50d172b39d8f888bb
 k
 ;shop-order/src/test/java/com/ylesb/ThreadUnsafeExample.java,a\b\aba73077578e46f121977bfe70270f80dfd8f9f4
 \
@@ -57,3 +53,7 @@ f
 6shop-user/src/main/java/com/ylesb/UserApplication.java,2\7\2711291225762af7a6173841dfb254d5f722b4d3
 i
 9shop-user/src/main/java/com/ylesb/service/SmsService.java,7\6\76552bdff6427451d79de118d894e3b79f082b94
+r
+Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
+e
+5shop-commom/src/main/java/com/ylesb/domain/TxLog.java,2\3\236ef979e7572213fd643c3812f2a62c8e50b24a
