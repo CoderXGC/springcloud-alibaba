@@ -105,6 +105,48 @@ public class MainClass {
         //        log.info("running");
         //    }
         //},"t5").start();
+
+
+      //  Thread t=new Thread() {
+      //      public void run() {
+      //          log.info("子线程");
+      //      }
+      //  };
+      //System.out.println(t.getState());
+      //  //t.run();
+      //  t.start();
+      //  System.out.println(t.getState());
+
+        //Thread t=new Thread() {
+        //    public void run() {
+        //        try {
+        //            Thread.sleep(2000);
+        //        } catch (InterruptedException e) {
+        //            e.printStackTrace();
+        //        }
+        //    }
+        //};
+        //t.setName("t1");
+        //t.start();
+        //log.info("{}",t.getState());
+        //Thread.sleep(500);
+        //log.info("{}",t.getState());
+
+        Thread t=new Thread() {
+            public void run() {
+               log.info("enter sleep...");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    log.info("wake up");
+                    e.printStackTrace();
+                }
+            }
+        };
+        t.start();
+        Thread.sleep(1000);
+        log.info("interrupt t");
+        t.interrupt();
     }
 
 }
