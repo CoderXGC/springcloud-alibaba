@@ -51,8 +51,6 @@ k
 ,shop-order/src/test/java/com/ylesb/Test.java,7\0\7024fb368745c2c4ed697cb3818718ebf0c205fa
 f
 6shop-user/src/main/java/com/ylesb/UserApplication.java,2\7\2711291225762af7a6173841dfb254d5f722b4d3
-i
-9shop-user/src/main/java/com/ylesb/service/SmsService.java,7\6\76552bdff6427451d79de118d894e3b79f082b94
 r
 Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
 e
@@ -65,8 +63,6 @@ d
 4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
 d
 4shop-order/src/main/java/com/ylesb/dao/TxLogDao.java,2\4\24f7252c088074c20f91b45090cad09e0d694c73
-D
-shop-product/pom.xml,7\8\78ddc04ca59e5d9a9bf2616d0ab76e288052194b
 l
 <shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
 g
@@ -77,5 +73,3 @@ r
 Bshop-order/src/test/java/com/ylesb/RocketMQReceiveMessageTest.java,e\7\e75dbe80e4ee6f34614f51a50d172b39d8f888bb
 o
 ?shop-order/src/test/java/com/ylesb/RocketMQSendMessageTest.java,3\0\308e71db85fcd4f16a7a1da95e1b7488e27d349e
-†
-Vshop-order/src/main/java/com/ylesb/service/impl/OrderServiceImplRocketMQListenter.java,d\9\d98bcc2ae997743d6a0b0f0e09f77896caab2197

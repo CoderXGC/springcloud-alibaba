@@ -57,6 +57,8 @@ public class MainClass {
     static int r=0;
     static int r1=0;
     static int r2=0;
+    static int count=0;
+    static Object lock=new Object();
     public static void main(String[] args) throws ExecutionException, InterruptedException {
        //Thread t=new Thread() {
        //    public void run() {
@@ -191,11 +193,76 @@ public class MainClass {
         //test5();
        // test6();
         //test7();
-        test8();
+       // test8();
         //TwoPhaseTermination tpt=new TwoPhaseTermination();
         //tpt.start();
         //Thread.sleep(3500);
         //tpt.stop();
+
+        //Thread t1=new Thread(()->{
+        //    for (int i = 0; i <5000; i++) {
+        //        synchronized (lock){
+        //            count++;
+        //        }
+        //    }
+        //
+        //},"t1");
+        //Thread t2=new Thread(()->{
+        //    for (int i = 0; i <5000; i++) {
+        //        synchronized (lock){
+        //            count--;
+        //        }
+        //    }
+        //
+        //},"t2");
+        //t1.start();
+        //t2.start();
+        //t1.join();
+        //t2.join();
+        //log.debug("count:{}",count);
+
+        //Room room=new Room();
+        //Thread t1=new Thread(()->{
+        //    for (int i = 0; i <5000; i++) {
+        //
+        //            room.increment();
+        //
+        //    }
+        //
+        //},"t1");
+        //Thread t2=new Thread(()->{
+        //    for (int i = 0; i <5000; i++) {
+        //
+        //            room.decrement();
+        //
+        //    }
+        //
+        //},"t2");
+        //t1.start();
+        //t2.start();
+        //t1.join();
+        //t2.join();
+        //log.debug("count:{}",room.getNumber() );
+
+        //static 是 number类对象  没有static 是 this 对象
+        Number number=new Number();
+        //Number number2=new Number();
+        new Thread(()->{
+                log.info("begin");
+            try {
+                number.a();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        },"t1").start();
+        new Thread(()->{
+                log.info("begin");
+            number.b();
+        },"t2").start();
+        new Thread(()->{
+            log.info("begin");
+            number.c();
+        },"t3").start();
     }
     public static void test1() throws InterruptedException {
         log.info("开始");
@@ -386,5 +453,34 @@ class TwoPhaseTermination {
     }
     public void stop() throws InterruptedException {
         monitor.interrupt();
+    }
+}
+class Room{
+    private int number=0;
+    public void increment(){
+        synchronized(this){
+            number++;
+        }
+    }
+    public void decrement(){
+        synchronized(this){
+            number--;
+        }
+    }
+    public int getNumber() {
+        return number;
+    }
+}
+@Slf4j
+class Number{
+    public synchronized void a() throws InterruptedException {
+        sleep(1000);
+        log.info("a");
+    }
+    public synchronized void b(){
+        log.info("b");
+    }
+    public  void c(){
+        log.info("c");
     }
 }
