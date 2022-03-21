@@ -34,4 +34,15 @@ public class ProductServiceImpl implements ProductService {
         //jpa提供的具体查询功能不需要自行编辑
         return productDao.findById(pid).get();
     }
+
+    @Override
+    public void reduceStock(Integer pid, Integer number) {
+        Product product = productDao.findById(pid).get();
+        //省略库存校验
+        //内存中扣减库存
+        //模拟异常
+        int i=1/0;
+        product.setStock(product.getStock() - number);
+        productDao.save(product);
+    }
 }

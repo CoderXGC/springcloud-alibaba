@@ -13,7 +13,9 @@ import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.sun.deploy.security.BlockedException;
 import com.ylesb.dao.OrderDao;
 import com.ylesb.domain.Order;
+import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
+import com.ylesb.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,39 +33,34 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl {
     @Autowired
     private OrderDao orderDao;
-    @Override
-    public void createOrder(Order order) {
+    @Autowired
+    private ProductService productService;
+    @Autowired
+    private OrderServiceImplRocketMQ orderServiceImplRocketMQ;
+    public Order createOrder(Integer pid) {
+        Product product = productService.findByPid(pid);
+        log.info("接收{}号商品下单",pid);
+        //创建订单
+        Order order=new Order();
+        order.setUid(1);
+        order.setPid(pid);
+        order.setUname("xgc");
+        order.setPname(product.getPname());
+        order.setPprice(product.getPprice());
+        order.setNumber(1);
         orderDao.save(order);
-    }
-    @Override
-    @SentinelResource("messsage")
-    public String message() {
-        return "message";
+        log.info("下单{}号成功！",pid);
+
+        //扣库存
+        productService.reduceStock(pid,order.getNumber());
+        //向mq发消息
+        //参数一指定topic
+        //参数二指定消息内容
+        //rocketMQTemplate.convertAndSend("order-topic",order);
+        return order;
     }
 
-    @Override
-    @SentinelResource(value ="messsage1",
-          //  blockHandlerClass = 自定义类中的方法
-            blockHandler="blockHandler",
-          //  fallbackClass =
-            fallback = "fallback"
-    )
-    public String message1(String name) {
-        return "message";
-    }
-    //参数需要与message1的参数一致
-    public String blockHandler(String name, BlockException e){
-    //自定义异常处理逻辑
-    log.info("BlockedException进入自定义处理异常逻辑,异常为{}",e);
-    return "BlockedException触发定义异常";
-    }
-    //参数需要与message1的参数一致
-    public String fallback(String name, Throwable e){
-        //自定义异常处理逻辑
-        log.info("Throwable进入自定义处理异常逻辑,异常为{}",e);
-        return "Throwable触发定义异常";
-    }
 }

@@ -9,10 +9,12 @@ package com.ylesb.controller;
  */
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.ylesb.dao.OrderDao;
 import com.ylesb.domain.Order;
 import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
 import com.ylesb.service.ProductService;
+import com.ylesb.service.impl.OrderServiceImpl;
 import com.ylesb.service.impl.OrderServiceImplRocketMQ;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
@@ -38,72 +40,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 public class OrderController {
-
     @Autowired
-    private OrderService orderService;
-    @Autowired
-    private OrderServiceImplRocketMQ orderServiceImplRocketMQ;
-    @Autowired
-    private ProductService productService;
-
-    @Autowired
-    private RocketMQTemplate rocketMQTemplate;
-
+    private OrderServiceImpl orderServiceImpl;
     //用户下单接口
     @RequestMapping("/order/prod/{pid}")
     public Order order(@PathVariable("pid") Integer pid)  {
-        log.info("接收{}号商品下单",pid);
-        //获取商品信息
-        //模拟调用时间
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        Product product=productService.findByPid(pid);
-        if (product.getPid()==-1){
-            Order order = new Order();
-            order.setPid(-1);
-            order.setPname("下单失败");
-            return order;
-        }
-        //创建订单
-        Order order=new Order();
-        order.setUid(1);
-        order.setPid(pid);
-        order.setUname("xgc");
-        order.setPname(product.getPname());
-        order.setPprice(product.getPprice());
-        order.setNumber(1);
-        orderServiceImplRocketMQ.createOrderBefore(order);
-        log.info("下单{}号成功！",pid);
-        //向mq发消息
-        //参数一指定topic
-        //参数二指定消息内容
-        //rocketMQTemplate.convertAndSend("order-topic",order);
-        return order;
-    }
-    //测试高并发
-    @RequestMapping("/order/message")
-    public String message(){
-       return  orderService.message();
-    }
-    //测试高并发
-    @RequestMapping("/order/message1")
-    public String message1(){
-
-       return  orderService.message()+"1";
-    }
-    /*此段代码有bug，结合文章看看是哪里的问题吧*/
-    @RequestMapping("/order/message2")
-    @SentinelResource(value ="getNameAndAge")
-    private String message2(String name ,Integer age){
-        return  "姓名："+name+"年龄："+age;
-    }
-
-    @RequestMapping("/order/message3")
-    public String message3(){
-        return  orderService.message1("xgc");
+        return orderServiceImpl.createOrder(pid);
     }
 
 }

@@ -9,11 +9,10 @@ package com.ylesb.service;
  */
 
 import com.ylesb.domain.Product;
-import com.ylesb.service.fallback.ProductServiceFallback;
-import com.ylesb.service.fallback.ProductServiceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @className    : ProductService
@@ -28,14 +27,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 //value用于指定微服务名称即url
 @FeignClient(
-        value="service-product",
-       fallback= ProductServiceFallback.class,
-       fallbackFactory= ProductServiceFallbackFactory.class
+        value="service-product"//,
+       //fallback= ProductServiceFallback.class,
+       //fallbackFactory= ProductServiceFallbackFactory.class
 )
 public interface ProductService {
     //指定请求的路径
     @RequestMapping("/product/{pid}")
     public Product findByPid(@PathVariable Integer pid);
-
+    //扣减库存
+    //指定请求的路径
+    @RequestMapping("/product/reduceStock")
+    void reduceStock(@RequestParam("pid") Integer pid, @RequestParam("number") Integer number);
 }
 
