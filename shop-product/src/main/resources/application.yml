@@ -1,32 +1,32 @@
-server:
-  port: 8081
-spring:
-  application:
-    name: service-product
-  zipkin:
-    base-url: http://127.0.0.1:9411
-    discovery-client-enabled: false #让nacos把它当成一个url不要做服务名
-    sender:
-      type: web
-  sleuth:
-    web:
-      client:
-        enabled: true
-    sampler:
-      probability: 1.0 # 采样比例为: 0.1(即10%),设置的值介于0.0到1.0之间，1.0则表示全部采集。
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver #版本看自己数据库版本安装
-    url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&userSSL=true
-    username: root
-    password: 123456
-  jpa:
-    properties:
-      hibernate:
-        hbm2ddl:
-          auto: update
-        dialect: org.hibernate.dialect.MySQL8Dialect
-    show-sql: true
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
+#server:
+#  port: 8081
+#spring:
+#  application:
+#    name: service-product
+#  zipkin:
+#    base-url: http://127.0.0.1:9411
+#    discovery-client-enabled: false #让nacos把它当成一个url不要做服务名
+#    sender:
+#      type: web
+#  sleuth:
+#    web:
+#      client:
+#        enabled: true
+#    sampler:
+#      probability: 1.0 # 采样比例为: 0.1(即10%),设置的值介于0.0到1.0之间，1.0则表示全部采集。
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver #版本看自己数据库版本安装
+#    url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&userSSL=true
+#    username: root
+#    password: 123456
+#  jpa:
+#    properties:
+#      hibernate:
+#        hbm2ddl:
+#          auto: update
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#    show-sql: true
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848

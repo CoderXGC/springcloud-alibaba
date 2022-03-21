@@ -25,8 +25,6 @@ n
 Vshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallbackFactory.java,e\b\eb97a1dfef77a812f0cabe4e1894299acf69074c
 
 Oshop-order/src/main/java/com/ylesb/service/fallback/ProductServiceFallback.java,b\7\b7b1486670ebe9b83a0134a783045cf150feeecb
-v
-Fshop-product/src/main/java/com/ylesb/controller/ProductController.java,9\6\964333860ed7710b90af18a3617c2938c36fd048
 q
 Aapi-gateway/src/main/java/com/ylesb/filters/AuthGlobalFilter.java,d\c\dc062cabc777b78f4ae527db39c5a09d2c74a2e8
 C
@@ -63,8 +61,6 @@ d
 4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
 d
 4shop-order/src/main/java/com/ylesb/dao/TxLogDao.java,2\4\24f7252c088074c20f91b45090cad09e0d694c73
-l
-<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
 g
 7shop-commom/src/main/java/com/ylesb/domain/Product.java,8\9\89c5fc7175670a4f44577174d35234b1a64c2768
 B

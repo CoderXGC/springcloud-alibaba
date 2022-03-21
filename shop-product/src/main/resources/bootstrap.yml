@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: service-product
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.13.1:8848  # nacos server address
+        file-extension: yaml #配置格式
+        shared-dataids: all-service.yaml  #配置文件名
+        refreshable-dataids: all-service.yaml  # 可刷新的配置
+        #namespace: df7e409a-9c06-4924-9b1e-368b538d6bde  #配置命名空间
+  profiles:
+    active: dev
