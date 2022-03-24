@@ -16,6 +16,7 @@ import com.ylesb.domain.Order;
 import com.ylesb.domain.Product;
 import com.ylesb.service.OrderService;
 import com.ylesb.service.ProductService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,6 +41,7 @@ public class OrderServiceImpl {
     private ProductService productService;
     @Autowired
     private OrderServiceImplRocketMQ orderServiceImplRocketMQ;
+    @GlobalTransactional // 开启全局事务
     public Order createOrder(Integer pid) {
         Product product = productService.findByPid(pid);
         log.info("接收{}号商品下单",pid);

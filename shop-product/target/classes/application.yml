@@ -1,32 +1,60 @@
-#server:
-#  port: 8081
-#spring:
-#  application:
-#    name: service-product
-#  zipkin:
-#    base-url: http://127.0.0.1:9411
-#    discovery-client-enabled: false #让nacos把它当成一个url不要做服务名
-#    sender:
-#      type: web
-#  sleuth:
-#    web:
-#      client:
-#        enabled: true
-#    sampler:
-#      probability: 1.0 # 采样比例为: 0.1(即10%),设置的值介于0.0到1.0之间，1.0则表示全部采集。
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver #版本看自己数据库版本安装
-#    url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&userSSL=true
-#    username: root
-#    password: 123456
-#  jpa:
-#    properties:
-#      hibernate:
-#        hbm2ddl:
-#          auto: update
-#        dialect: org.hibernate.dialect.MySQL8Dialect
-#    show-sql: true
-#  cloud:
+server:
+  port: 8081
+spring:
+  application:
+    name: service-product
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #让nacos把它当成一个url不要做服务名
+    sender:
+      type: web
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0 # 采样比例为: 0.1(即10%),设置的值介于0.0到1.0之间，1.0则表示全部采集。
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #版本看自己数据库版本安装
+    url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&userSSL=true
+    username: root
+    password: 123456
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+## seata 配置
+#seata:
+#  # 分布式事务分组
+#  tx-service-group: my_test_tx_group
+#  # seata配置中心
+#  config:
+#    type: nacos
 #    nacos:
-#      discovery:
-#        server-addr: localhost:8848
+#      namespace: ff2305f4-a17d-4d48-809e-4f6a3c69f024  #在安装seata目录下的conf中的register.conf的config节点中下的nacos节点的namespace。如果没有配置 默认public空间
+#      # nacos配置中心地址
+#      server-addr: 127.0.0.1:8848
+#      # 分组
+#      group: 'SEATA_GROUP'
+#      # nacos的账号和密码
+#      userName: 'nacos'
+#      password: 'nacos'
+#  # seata的注册中心
+#  registry:
+#    type: nacos
+#    nacos:
+#      application: seata-server
+#      server-addr: 127.0.0.1:8848
+#      namespace: e3868230-8c1f-42b8-b433-286408a175d6   #在安装seata目录下的conf中的register.conf的register节点中下的nacos节点的namespace。如果没有配置 默认public空间
+#      userName: 'nacos'
+#      password: 'nacos'
+#  service:
+#    vgroup-mapping:
+#      my_test_tx_group: default    #这里要特别注意和nacos中配置的要保持一直
