@@ -71,3 +71,17 @@ i
 9shop-user/src/main/java/com/ylesb/service/SmsService.java,7\6\76552bdff6427451d79de118d894e3b79f082b94
 n
 >shop-order/src/main/java/com/ylesb/service/ProductService.java,5\0\505008e8e4da7ea22194e15f2f6f20d7874b64fe
+h
+8shop-order/src/main/java/com/ylesb/OrderApplication.java,9\4\949a8145879f31377e92fa7189f7355b89758bbf
+r
+Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
+l
+<shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
+v
+Fshop-product/src/main/java/com/ylesb/controller/ProductController.java,9\6\964333860ed7710b90af18a3617c2938c36fd048
+}
+Mshop-order/src/main/java/com/ylesb/service/impl/OrderServiceImplRocketMQ.java,5\b\5ba0c249e79437f21407f009d0263dc39e814f7b
+t
+Dshop-order/src/main/java/com/ylesb/config/DataSourceProxyConfig.java,d\4\d4593357d8d309a987548bd0cd800b2446179a31
+v
+Fshop-product/src/main/java/com/ylesb/config/DataSourceProxyConfig.java,d\5\d574435145ea72c7244b050bdad39bba08e93437
