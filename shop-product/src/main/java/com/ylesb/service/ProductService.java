@@ -25,6 +25,6 @@ import com.ylesb.domain.Product;
 public interface ProductService {
     //根据pid查商品信息
      Product findByPid(Integer pid);
-    //扣减库存
+    //扣减库存的
     void reduceStock(Integer pid, Integer number);
 }
