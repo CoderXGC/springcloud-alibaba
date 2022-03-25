@@ -41,8 +41,6 @@ f
 6shop-user/src/main/java/com/ylesb/UserApplication.java,2\7\2711291225762af7a6173841dfb254d5f722b4d3
 e
 5shop-commom/src/main/java/com/ylesb/domain/TxLog.java,2\3\236ef979e7572213fd643c3812f2a62c8e50b24a
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 d
 4shop-order/src/main/java/com/ylesb/dao/OrderDao.java,2\1\213ee4e238faba65620cd36d566843b51fcd751f
 d
@@ -77,11 +75,5 @@ r
 Bshop-order/src/main/java/com/ylesb/controller/OrderController.java,f\c\fc06f89e6644376351bb58592cb2386c11cd039b
 l
 <shop-product/src/main/java/com/ylesb/ProductApplication.java,5\6\56f98614feebc2019683e030777aaa904f568b78
-v
-Fshop-product/src/main/java/com/ylesb/controller/ProductController.java,9\6\964333860ed7710b90af18a3617c2938c36fd048
 }
 Mshop-order/src/main/java/com/ylesb/service/impl/OrderServiceImplRocketMQ.java,5\b\5ba0c249e79437f21407f009d0263dc39e814f7b
-t
-Dshop-order/src/main/java/com/ylesb/config/DataSourceProxyConfig.java,d\4\d4593357d8d309a987548bd0cd800b2446179a31
-v
-Fshop-product/src/main/java/com/ylesb/config/DataSourceProxyConfig.java,d\5\d574435145ea72c7244b050bdad39bba08e93437
