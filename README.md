@@ -18,7 +18,8 @@
   220301_xgc_Sleuth日志链路追踪：[学习链接: https://developer.aliyun.com/article/873463](https://developer.aliyun.com/article/873463)  
   220303_xgc_gatewayAndSatoken网关结合Sa-token进行登录鉴权：[学习链接:  https://developer.aliyun.com/article/873849]( https://developer.aliyun.com/article/873849)    
   220310_xgc_useRocketMQ一文教你入门RocketMQ：[学习链接: https://developer.aliyun.com/article/875411](https://developer.aliyun.com/article/875411)  
-  220310_xgc_useRocketMQ一文教你入门RocketMQ：[学习链接: https://developer.aliyun.com/article/875411](https://developer.aliyun.com/article/875411)  
+  220311_xgc_rocketMQRocketMQ消息：[学习链接: https://developer.aliyun.com/article/876944](https://developer.aliyun.com/article/876944)
+  220321_xgc_seata分布式事务：[学习链接: https://developer.aliyun.com/article/879308](https://developer.aliyun.com/article/879308)  
 等待添加...
   
 ## Stars 趋势
