@@ -5,7 +5,7 @@
 
 ## 分支介绍
   可以拉去相关分支，如下图：
-  ![image.png](https://ucc.alicdn.com/pic/developer-ecology/ed0fb152427549db8ded4ee1816c209e.png)
+  ![f2da7b9f62f8a95a6c6f702128ae81e1.png](https://img.gejiba.com/images/f2da7b9f62f8a95a6c6f702128ae81e1.png)
   220118_xgc_initProject环境搭建以及注意事项：  [学习链接:https://developer.aliyun.com/article/857900](https://developer.aliyun.com/article/857900)    
   220121_xgc_buildFramework搭建微服务模块：  [学习链接:https://developer.aliyun.com/article/859868](https://developer.aliyun.com/article/859868)    
   220124_xgc_createTable微服务调用：  [学习链接:https://developer.aliyun.com/article/860936](https://developer.aliyun.com/article/860936)    
