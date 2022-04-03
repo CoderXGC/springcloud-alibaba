@@ -4,6 +4,8 @@
 本项目是根据Spring Cloud Alibaba技术栈进行整体项目学习、不断更新。欢迎 Star 🌟 关注[本项目](https://github.com/CoderXGC/springcloud-alibaba/)，获取项目最新动态。
 
 ## 分支介绍
+  可以拉去相关分支，如下图：
+  ![image.png](https://ucc.alicdn.com/pic/developer-ecology/ed0fb152427549db8ded4ee1816c209e.png)
   220118_xgc_initProject环境搭建以及注意事项：  [学习链接:https://developer.aliyun.com/article/857900](https://developer.aliyun.com/article/857900)    
   220121_xgc_buildFramework搭建微服务模块：  [学习链接:https://developer.aliyun.com/article/859868](https://developer.aliyun.com/article/859868)    
   220124_xgc_createTable微服务调用：  [学习链接:https://developer.aliyun.com/article/860936](https://developer.aliyun.com/article/860936)    
