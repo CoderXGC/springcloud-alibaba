@@ -1,7 +1,9 @@
 ![269b33327dfdfd5f5e58e2b5a4de72fd.png](https://img.gejiba.com/images/269b33327dfdfd5f5e58e2b5a4de72fd.png)
 ##  Spring Cloud Alibaba x XGC
 ## 介绍
-本项目是根据Spring Cloud Alibaba技术栈进行整体项目学习、不断更新。欢迎 Star 🌟 关注[本项目](https://github.com/CoderXGC/springcloud-alibaba/)，获取项目最新动态。
+本项目是根据Spring Cloud Alibaba技术栈进行整体项目学习的教程、不断更新。
+食用方法：首先根据下面学习链接，按照顺序下载安装相关依赖，然后根据下面的学习链接，按照顺序进行学习。
+欢迎 Star 🌟 关注[本项目](https://github.com/CoderXGC/springcloud-alibaba/)，获取项目最新动态。
 
 ## 分支介绍
   可以拉去相关分支，如下图：
